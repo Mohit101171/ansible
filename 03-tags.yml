@@ -1,0 +1,16 @@
+- name: Demo on tasks tag
+  hosts: all
+  tasks:
+    - name: CentOS
+      debug:
+        msg: CentOS
+      tags:
+        - centos
+
+    - name: Ubuntu
+      debug:
+        msg: Ubuntu
+      tags:
+        - ubuntu
+
+# Tags can be on task level or also on Play level to pick which play to run
