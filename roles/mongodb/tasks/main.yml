@@ -28,11 +28,11 @@
 
 - name: Load Schema - Catalogue
   community.mongodb.mongodb_shell:
-    file: "/tmp/mongodb-main/catalogue.js"
+    file: "/tmp/mongodb-main/catalogue.yml"
     idempotent: yes
   
   - name: Load Schema - Users
   community.mongodb.mongodb_shell:
-    file: "/tmp/mongodb-main/user.js"
+    file: "/tmp/mongodb-main/users.yml"
     idempotent: yes
   
