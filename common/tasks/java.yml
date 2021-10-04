@@ -1,4 +1,3 @@
-
 - name: Install Maven Package
   yum:
     name: maven
@@ -14,4 +13,3 @@
 
 - name:  SystemD
   include_tasks: systemd.yml
-
