@@ -1,4 +1,7 @@
-- name: Include NodeJS
-  include_role:
-    name: common
-    tasks_from: nodejs
+- name: Install Maven Package
+  yum:
+    name: maven
+    state: present
+
+- name:  Download
+  include_tasks: download.yml
