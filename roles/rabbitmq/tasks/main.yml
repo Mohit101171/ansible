@@ -17,7 +17,7 @@
     state: started
     enabled: yes
 
-- name: Create RoboShop User
+- name: Create RoboShop app user
   community.rabbitmq.rabbitmq_user:
     user: roboshop
     password: roboshop123
@@ -27,4 +27,6 @@
     write_priv: .*
     state: present
     tags: administrator
+
+
 
