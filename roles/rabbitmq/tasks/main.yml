@@ -17,6 +17,7 @@
     state: started
     enabled: yes
 
+
 - name: Create RoboShop app user
   community.rabbitmq.rabbitmq_user:
     user: roboshop
